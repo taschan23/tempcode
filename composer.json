@@ -1,0 +1,36 @@
+{
+  "name": "evgeny/temp-code",
+  "description": "Generate temp code",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Evgeny\\TempCode\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Evgeny",
+      "email": "bakalov.es@ya.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "illuminate/support": "^10.0",
+    "illuminate/database": "^10.0"
+  },
+  "classmap": [
+    "src/app/Http/Controllers",
+    "src/database/migrations",
+    "src/app/Model",
+    "src/app/Services",
+    "src/app/Traits"
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Evgeny\\TempCode\\ServiceProvider"
+      ]
+    }
+  }
+}
